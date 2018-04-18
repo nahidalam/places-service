@@ -52,7 +52,7 @@ def storeData(data):
         lng = item["geometry"]["location"]["lng"]
         vicinity = item['vicinity']
         typeOfPlace = item['types'][0]
-        cursor.execute("INSERT into place (name, lat, lng, vicinity, typeOfPlace) values (?, ?, ?, ?, ?)",(name, lat, lng, vicinity, typeOfPlace))
+        cursor.execute("INSERT or IGNORE into place (name, lat, lng, vicinity, typeOfPlace) values (?, ?, ?, ?, ?)",(name, lat, lng, vicinity, typeOfPlace))
 
     connection.commit()
     connection.close()
