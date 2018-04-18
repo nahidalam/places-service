@@ -27,7 +27,9 @@ You should see an output showing the Name, Lattitude, Longitude and Vicinity of 
 
 ## Further Improvements:
 
-I have extracted data for all the places within 500m radius of lattitude -33.8670522 and longitude 151.1957362. This can be parameterized for user input of variable lattitude, longitude and radius. 
+I have extracted data for all the places within 500m radius of lattitude -33.8670522 and longitude 151.1957362. These values can be auto generated for data scrapping through the API.
+
+Right now, we have to enter the exact word such as 'car_rental' to find a place by type. If there is a typo, the service will not return any answer. To solve this, we can use Elasticsearch database which can automatically match similar words and return relevant results.  
 
 One obvious Improvement is securing the RESTful web service. Right now, the service is open to public. One way to
 secure it is to force login through username and password.
