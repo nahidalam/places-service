@@ -22,7 +22,22 @@ Paste below link in your browser
 
 #### http://localhost:5000/places/api/v1.0/json?type=car_rental
 
-You should see an output showing the Name, Lattitude, Longitude and Vicinity of all the car_rental places stored in the database.
+You should see an output showing the Name, Lattitude, Longitude and Vicinity of all the car_rental places stored in the database. An example output below:
+
+####[
+####{
+####"lat":-33.86479,
+####"lng":151.194134,
+####"name":"Doltone House - Jones Bay Wharf",
+####"visinity":"Level 3, 26/32 Pirrama Road, Pyrmont"
+####},
+####{
+####"lat":-33.8667062,
+####"lng":151.1957844,
+####"name":"Doltone House - Darling Island Wharf",
+####"visinity":"Ground Floor, 48 Pirrama Rd, Pyrmont"
+####}
+####]
 
 
 ## Further Improvements:
